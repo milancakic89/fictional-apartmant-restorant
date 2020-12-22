@@ -1,0 +1,45 @@
+.footer {
+  &__links {
+    border-top: 1px solid $color-gray;
+
+    &-link {
+      color: #fff;
+      display: inline-block;
+
+      &:hover {
+        color: $color-text-orange;
+      }
+
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+
+  }
+
+  &__logo-box {
+    text-align: center;
+    width: 20rem;
+    margin: 1rem auto;
+  }
+
+  &__logo {
+    width: 100%;
+    color: #fff;
+  }
+
+  &__copyright {
+    color: $color-gray;
+    padding-top: 2rem;
+
+    span {
+      text-transform: uppercase;
+      color: #fff;
+    }
+
+    ;
+  }
+
+
+
+}

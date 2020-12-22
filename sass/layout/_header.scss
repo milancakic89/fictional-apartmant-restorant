@@ -1,0 +1,46 @@
+.header {
+  height: 95vh;
+  position: relative;
+  background-color: gray;
+  background-image: linear-gradient(to right, rgba($color-light, 0.2), rgba($color-black, 0.8)), url('../img/header-1.jpg');
+  background-size: cover;
+  background-position: bottom;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+
+  @include respond(tab-land) {
+    clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+  }
+
+  &__logo-box {
+    clear: both;
+    display: inline-block;
+    padding-top: 3rem;
+    padding-left: 1rem;
+
+
+  }
+
+  &__logo__image {
+    height: 6.3rem;
+  }
+
+  &__text-box {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    @include respond(mini-phone) {
+      top: 40%;
+    }
+  }
+
+  &__logo {
+    color: $color-light;
+    font-size: 3rem;
+  }
+}

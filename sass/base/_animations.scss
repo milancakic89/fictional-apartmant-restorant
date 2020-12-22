@@ -1,0 +1,49 @@
+
+@keyframes animationLeft {
+
+  0% {
+    opacity: 0;
+    transform: translateX(-30rem);
+  }
+
+
+  80% {
+    transform: translateX(2rem);
+
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0px) rotate(0deg);
+  }
+}
+
+@keyframes animationRight {
+
+  0% {
+    opacity: 0;
+    transform: translateX(30rem);
+  }
+
+  80% {
+    transform: translateX(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
+
+@keyframes animationUp {
+
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}

@@ -1,0 +1,233 @@
+.composition {
+  position: relative;
+  width: 100%;
+
+  @include respond(mini-phone) {
+    height: 22rem;
+    margin-top: 1.5rem;
+  }
+
+  @include respond(phone) {
+    height: 18rem;
+    margin-top: 1.5rem;
+  }
+
+  @include respond(tab-port) {
+    height: 15rem;
+    margin-top: 1.5rem;
+  }
+
+  @include respond(tab-land) {
+    height: 15rem;
+    margin-top: 1.5rem;
+  }
+
+
+  &__photo {
+    width: 45%;
+    box-shadow: 0px 1.5rem 4rem rgba($color-black, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    transition: all .2s;
+    outline-offset: 2rem;
+
+    @include respond(mini-phone) {
+      width: 45%;
+    }
+
+    @include respond(phone) {
+      width: 45%;
+    }
+
+    @include respond(tab-port) {
+      width: 70%;
+    }
+
+    &--1 {
+      left: 0;
+      top: 0;
+      z-index: 1;
+
+      @include respond(mini-phone) {
+        top: 0;
+        left: 0%;
+        z-index: 3;
+
+        &:hover {
+          top: -1rem;
+          left: 50%;
+          z-index: 1;
+          transform: translateX(-100%) scale(1.7) !important;
+        }
+      }
+
+      @include respond(phone) {
+        top: 0;
+        left: 0%;
+        z-index: 3;
+
+        &:hover {
+          top: -1rem;
+          left: 50%;
+          z-index: 1;
+          transform: translateX(-100%) scale(1.2) !important;
+        }
+      }
+
+      @include respond(tab-port) {
+        left: 0;
+        top: 0;
+        z-index: 1;
+
+        &:hover {
+          top: -1rem;
+          left: 0;
+          z-index: 10;
+          transform: scale(1.2) !important;
+        }
+      }
+
+    }
+
+    &--2 {
+      right: 0;
+      top: 2rem;
+      z-index: 2;
+
+      @include respond(mini-phone) {
+        top: -1rem;
+        right: 50%;
+        transform: translateX(50%) !important;
+        z-index: 3;
+
+        &:hover {
+          right: 50%;
+          transform: translateX(50%) scale(1.7) !important;
+        }
+      }
+
+      @include respond(phone) {
+        top: -1rem;
+        right: 50%;
+        transform: translateX(50%) !important;
+        z-index: 3;
+
+        &:hover {
+          right: 50%;
+          transform: translateX(50%) scale(1.2) !important;
+        }
+      }
+
+      @include respond(tab-port) {
+        right: 9rem;
+        top: 3rem;
+        z-index: 3;
+
+        &:hover {
+          right: 11rem;
+          top: 2rem;
+          z-index: 3;
+        }
+      }
+
+    }
+
+    &--3 {
+      left: 20%;
+      top: 10rem;
+      z-index: 3;
+
+      @include respond(mini-phone) {
+        left: 55%;
+        top: 0;
+        z-index: 2;
+
+        &:hover {
+          left: 50%;
+          transform: translateX(0%) scale(1.7) !important;
+          top: -1rem;
+        }
+      }
+
+
+
+      @include respond(phone) {
+        left: 55%;
+        top: 0;
+        z-index: 2;
+
+        &:hover {
+          left: 50%;
+          transform: translateX(0%) scale(1.2) !important;
+          top: -1rem;
+        }
+      }
+
+      @include respond(tab-port) {
+        left: 20%;
+        top: 10rem;
+        z-index: 3;
+
+        &:hover {
+          transform: scale(1.2) !important;
+          top: 7rem;
+          left: 20%;
+        }
+      }
+    }
+
+
+
+    &:hover {
+      outline: 1.5rem solid $color-text-orange;
+      border: none;
+      transform: scale(1.1) translateY(-.5rem);
+      box-shadow: 0px 2.5rem 4rem rgba($color-black, 0.4);
+      z-index: 10;
+
+      @include respond(mini-phone) {
+        &:hover {
+          outline: .2rem solid $color-text-orange;
+          box-shadow: 0px 2.5rem 4rem rgba($color-black, 0.4);
+          z-index: 10;
+        }
+      }
+
+      @include respond(phone) {
+        &:hover {
+          outline: .3rem solid $color-text-orange;
+          box-shadow: 0px 2.5rem 4rem rgba($color-black, 0.4);
+          z-index: 10;
+        }
+      }
+
+      @include respond(tab-port) {
+        &:hover {
+          outline: .6rem solid $color-text-orange;
+          box-shadow: 0px 2.5rem 4rem rgba($color-black, 0.4);
+          z-index: 10;
+        }
+      }
+
+      @include respond(tab-land) {
+        &:hover {
+          outline: 1.2rem solid $color-text-orange;
+          box-shadow: 0px 2.5rem 4rem rgba($color-black, 0.4);
+          z-index: 10;
+        }
+      }
+    }
+
+  }
+
+  &:hover &__photo:not(:hover) {
+    transform: scale(.9);
+
+    @include respond(phone) {
+      transform: none;
+    }
+  }
+
+
+
+}

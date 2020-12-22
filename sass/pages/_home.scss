@@ -1,0 +1,78 @@
+.section-about {
+  background-color: $color-gray-light-1;
+  margin-top: -20vh;
+  padding-top: calc(30vh + #{$gutter-vertical});
+  padding-bottom: 30rem;
+
+  @include respond(mini-phone) {
+    margin-top: -10vh;
+    padding: 2rem 1rem 6rem 1rem;
+    padding-top: calc(10vh + #{$gutter-vertical});
+  }
+
+  @include respond(phone) {
+    margin-top: -10vh;
+    padding: 15rem 5rem 15rem 5rem;
+    padding-top: calc(10vh + #{$gutter-vertical});
+  }
+}
+
+.section-menu {
+  background-image: linear-gradient(to right bottom, $color-section-menu-light, $color-section-menu-dark);
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  margin-top: -25vh;
+  padding: 20rem 5rem 20rem 5rem;
+
+  @include respond(mini-phone) {
+    clip-path: polygon(0 4%, 100% 0, 100% 95%, 0 100%);
+    margin-top: -10vh;
+    padding: 10rem 5rem 6rem 5rem;
+  }
+
+  @include respond(phone) {
+    clip-path: polygon(0 8%, 100% 0, 100% 95%, 0 100%);
+    padding: 15rem 5rem 15rem 5rem;
+  }
+
+  @include respond(tab-port) {
+    clip-path: polygon(0 15%, 100% 0, 100% 95%, 0 100%);
+    padding: 15rem 5rem 15rem 5rem;
+  }
+
+  @include respond(tab-land) {
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    padding: 15rem 5rem 15rem 5rem;
+  }
+
+}
+
+.footer {
+  padding: 20rem 10rem 5rem 10rem;
+  background-color: $color-gray-background;
+  margin-top: -20rem;
+
+  @include respond(mini-phone) {
+    padding: 5rem 2rem 5rem 2rem;
+    background-color: $color-gray-background;
+    margin-top: 15rem;
+  }
+
+  @include respond(phone) {
+    padding: 5rem 2rem 5rem 2rem;
+    background-color: $color-gray-background;
+  }
+}
+
+.about-us {
+  padding: 5rem;
+  padding-bottom: 15rem;
+  margin-bottom: 30rem;
+
+  @include respond (mini-phone) {
+
+    padding: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem;
+    padding-top: 6rem;
+  }
+}

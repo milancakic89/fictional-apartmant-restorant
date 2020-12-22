@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+body {
+  overflow-x: hidden;
+
+  @include respond(mini-phone) {
+    width: 100%;
+  }
+}
+
+html {
+  font-size: 62.5%;
+
+
+
+  @include respond(tab-land) {
+    font-size: 62.5%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 60%;
+  }
+
+  @include respond(phone) {
+    font-size: 58%;
+  }
+
+  @include respond(mini-phone) {
+    font-size: 55%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
